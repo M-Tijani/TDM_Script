@@ -1,0 +1,40 @@
+ETAPES[#ETAPES + 1] = {
+    cle    = "kardorim",
+    nom    = "Crypte de Kardorim (Incarnam)",
+    succes = { 33 },
+    acces  = "tp",
+    quete  = nil,
+    aller  = {
+        { map = "*", path = "havenbag" },
+        { map = "162791424", path = "zaap(191105026)" },
+        { map = "191105026", path = "top" },
+        { map = "191105024", path = "right" },
+        { map = "191106048", door = "383" },
+        { map = "192416776", door = "455" },
+        { map = "153880835", path = "left" },
+        { map = "153880323", path = "bottom" },
+        { map = "153880322", path = "bottom" },
+        { map = "153880321", path = "bottom" },
+        { map = "153880064", path = "right" },
+        { map = "153881089", path = "top" },
+        { map = "153881088", path = "right" },
+        { map = "153881600" },
+    },
+    entree = {
+        carte = "153881600",
+        pnj = 2907,
+        reponses = { -1, -1, -2 },
+        reponsesTp = { -2 },
+    },
+    donjon = {
+        { map = "152829952", fight = true },
+        { map = "152830976", fight = true },
+        { map = "152832000", fight = true },
+        { map = "152833024", fight = true },
+        { map = "152834048", fight = true },
+        { map = "152835072", custom = function()
+            parler(2936, { -2 }, { changeCarte = 5000 })
+        end },
+    },
+    apres  = nil,
+}
